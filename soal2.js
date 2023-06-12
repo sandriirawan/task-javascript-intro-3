@@ -26,12 +26,11 @@ const getMonth = () => {
 };
 
 const processMonths = (months) => {
-  const monthList = months.map((month) => month.toUpperCase());
-  console.log("Months:", monthList);
+ months.map((month) => console.log(`month: ${month}`));
 };
 
 getMonth()
   .then(processMonths)
   .catch((error) => {
-    console.log("Error:", error.message);
+    console.log("Error:", error);
   });

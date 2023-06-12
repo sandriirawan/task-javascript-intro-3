@@ -25,13 +25,13 @@ cekHariKerja()
   });
 
 // Menggunakan try-catch
-// async function checkWorkday() {
-//   try {
-//     const result = await cekHariKerja();
-//     console.log('Hari ini adalah hari kerja:', result);
-//   } catch (error) {
-//     console.log('Terjadi kesalahan:', error.message);
-//   }
-// }
+async function checkWorkday() {
+  try {
+    const result = await cekHariKerja();
+    console.log("Hari ini adalah hari kerja:", result);
+  } catch (error) {
+    console.log("Terjadi kesalahan:", error.message);
+  }
+}
 
-// checkWorkday();
+checkWorkday();

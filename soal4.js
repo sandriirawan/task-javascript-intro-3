@@ -5,7 +5,7 @@ const getName = () => {
     .get("https://jsonplaceholder.typicode.com/users")
     .then((response) => {
       const data = response.data;
-      console.log(data.map((item) => item.name));
+      data.map((item) => console.log(`nama: ${item.name}`))
     })
     .catch((error) => {
       console.log("Terjadi kesalahan:", error);
